@@ -12,19 +12,25 @@
 <body>
   <div class="container">
     <h1>Pig Dice</h1>
-    <form id="pig_dice">
+    <form id="pig-dice-form">
       <div class="form-group">
         <!-- <input id="onePlayer" type="radio" name="" -->
-        <label class="control" for ="playerNameOne">Player 1</label>
+        <label class="control" for="playerNameOne">Player 1</label>
         <input id="playerNameOne" type="input" class="form-control" required>
       </div>
 
       <label class="control" for="playerNameTwo">Player 2</label>
       <input id="playerNameTwo" type="input" class="form-control">
-      </div>
 
       <button type="submit" class="btn">Submit</button>
-      </form>
+    </form>
+    <div id="player-names">
+      <div id="player-one-name">
+      </div>
+      <div id="player-two-name">
+      </div>
+      <button id="start-game" type="btn" class="btn">Start Game</button>
+    </div>
   </div>
 </body>
 

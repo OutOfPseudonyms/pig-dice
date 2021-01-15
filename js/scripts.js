@@ -22,11 +22,19 @@ function Player(name) {
 
 //User Interface Logic
 $(document).ready(function () {
-  $("#pig_dice").submit(function (event) {
+  $("#pig-dice-form").submit(function (event) {
     event.preventDefault();
     let userNameOne = $("#playerNameOne").val();
     let userNameTwo = $("#playerNameTwo").val();
     const userOne = new Player(userNameOne);
+    const userTwo = new Player(userNameTwo);
     console.log(userOne.name);
+    $('#pig-dice-form').hide();
+    $('#player-names').show();
+    $('#player-one-name').text(`Player 1: ${userOne.name}`);
+    $('#player-two-name').text(`Player 2: ${userTwo.name}`);
   })
+  $("#start-game").click(function() {
+    alert( "Start Pig Dice game.");
+  });
 })
