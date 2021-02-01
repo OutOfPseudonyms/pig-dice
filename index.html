@@ -24,13 +24,27 @@
 
       <button type="submit" class="btn">Submit</button>
     </form>
-    <div id="player-names">
-      <div id="player-one-name">
+    <div id="player-names" class="row">
+      <div id="player-one" class="col-md-4">
+        <p id="player-one-name"></p>
+        <p id="player-one-current-score"></p>
+        <p id="player-one-total-score"></p>
       </div>
-      <div id="player-two-name">
+      <div class="col-md-2">
+      </div>
+      <div id="player-two" class="col-md-4">
+        <p id="player-two-name"></p>
+        <p id="player-two-current-score"></p>
+        <p id="player-two-total-score"></p>
+      </div>
+      <div class="col-md-2">
       </div>
       <button id="start-game" type="btn" class="btn">Start Game</button>
+      <button id="roll" type="btn" class="btn">Roll</button>
+      <button id="end-turn" type="btn" class="btn">End Turn</button>
     </div>
+  </div>
+  <div id="end-game">
   </div>
 </body>
 

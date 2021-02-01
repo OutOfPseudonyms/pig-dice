@@ -1,3 +1,30 @@
-#player-names {
+#player-names, #end-turn, #roll {
   display: none;
 }
+
+#end-game {
+  display: none;
+  border: solid;
+  border-color: crimson;
+  width: 500px;
+  margin: 0 auto;
+  font-size: 40px;
+  text-align: center;
+  background-color: #a45ee5;
+}
+
+.winning-player {
+  color: green;
+}
+
+.losing-player {
+  color: red;
+}
+
+.current-player {
+  color: greenyellow;
+  border: 2px solid crimson;
+  padding: 4px;
+  background-color: #a45ee5;
+}
+
